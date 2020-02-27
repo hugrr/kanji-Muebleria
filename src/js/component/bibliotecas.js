@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Gallery from "react-photo-gallery";
+import { Link } from "react-router-dom";
 
 export const Bibliotecas = () => (
 	<div className="container">
@@ -10,7 +11,11 @@ export const Bibliotecas = () => (
 			<button type="button" className="btn btn-dark component">
 				Libreros
 			</button>
-			<i id="back" className="far fa-arrow-alt-circle-left" />
+			<div id="back">
+				<Link to="/">
+					<i id="far" className="far fa-arrow-alt-circle-left" />
+				</Link>
+			</div>
 		</div>
 
 		<div className="row text-center">
